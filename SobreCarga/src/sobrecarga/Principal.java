@@ -6,7 +6,6 @@
 package sobrecarga;
 
 import java.util.Scanner;
-
 /**
  *
  * @author reroes
@@ -16,7 +15,7 @@ public class Principal {
         
         Scanner scanner = new Scanner(System.in);
         Trabajador t = new Trabajador();
-        Double []sueldos=new Double[4];
+        double []sueldo=new double[4];
         
         System.out.println("Número de nombres del trabajador 1 o 2");
         int numero_nombres = scanner.nextInt();
@@ -32,9 +31,7 @@ public class Principal {
             System.out.println("Ingrese el nombre dos del trabajador");
             String nombre2 = scanner.nextLine();
             t.agregar_nombres(nombre1, nombre2);
-        
         }
-        
         System.out.println("Ingrese el apellido del trabajador");
         String apellidos = scanner.nextLine();
         t.agregar_apellidos(apellidos);
@@ -45,10 +42,10 @@ public class Principal {
         double s4 =scanner.nextDouble();
         t.agregar_sueldo(s1,s2,s3,s4);
         System.out.println("Inicio de arreglo");
-        for (int i = 0; i < sueldos.length; i++) {
-            sueldos[i]=scanner.nextDouble();
+        for (int i = 0; i < 4; i++) {
+            sueldo[i]=scanner.nextDouble();
         }
-        t.agregar_sueldo(sueldos);
+        t.agregar_sueldo(sueldo);
 
         
         System.out.printf("Los datos del trabajador son: %s\n", t.presentar_datos());

@@ -46,7 +46,7 @@ public class Trabajador {
     public void agregar_sueldo(double n1, double n2, double n3, double n4){
         sueldo_mensual=n1+n2+n3+n4;
     }
-    public void agregar_sueldo(double[]sueldo){
+    public void agregar_sueldo(double[] sueldo){
         for (int i = 0; i < 4; i++) {
             sueldo_mensual+=sueldo[i];
         }
